@@ -16,6 +16,7 @@ begin
   2'b11 : q <=~q;
   default : q<=0;
  endcase
+  qb <=~q;
 end 
 end 
 endmodule
