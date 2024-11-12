@@ -1,8 +1,9 @@
 module jk(clk,rst,j,k,q,qb);
  input j,k,clk,rst;
  output reg q;
- output qb;
+ output wire qb;
 
+assign qb =~q;
 always@(posedge clk or posedge rst)
 begin
  if(rst)
@@ -16,7 +17,6 @@ begin
   2'b11 : q <=~q;
   default : q<=0;
  endcase
-  qb <=~q;
 end 
 end 
 endmodule
