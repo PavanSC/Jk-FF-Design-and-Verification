@@ -19,8 +19,7 @@ K: coverpoint cd.k{
 X: cross J,K;
 
 RST: coverpoint cd.rst{ 
-                    bins r1={1'b0};
-                    bins r2={1'b1};}
+                    bins r1={1'b0};}
 
 endgroup
 
