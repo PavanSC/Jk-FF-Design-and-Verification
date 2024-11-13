@@ -6,9 +6,13 @@ A JK flip-flop is a sequential logic circuit that has two inputs, J and K, and a
 
 2. JK Flip-Flop Truth Table
 J	K	Q (next state)
+
 0	0	No change
+
 0	1	Reset (Q = 0)
+
 1	0	Set (Q = 1)
+
 1	1	Toggle (Q changes state)
 
     
@@ -22,10 +26,15 @@ Verification Plan
 
 Initialize: Start with Q = 0.
 Apply all input combinations: Simulate each possible state of J and K at the clock edge:
+
 J = 0, K = 0: Verify that Q does not change.
+
 J = 0, K = 1: Verify that Q resets to 0.
+
 J = 1, K = 0: Verify that Q sets to 1.
+
 J = 1, K = 1: Verify that Q toggles on each clock edge.
+
 Monitor and log outputs: Capture Q to confirm it matches the expected values for each combination.
 Assertions: Add assertions to check that Q behaves correctly based on the input conditions.
 Functional Coverage: Ensure all J, K states are covered.
