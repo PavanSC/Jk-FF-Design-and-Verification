@@ -13,7 +13,7 @@ virtual task body();
  repeat(50) begin
   s1=trans::type_id::create("s1");
   start_item(s1);
-  s1.randomize();
+  s1.randomize() with {rst==1'b0;};
   finish_item(s1);
 end
 endtask
